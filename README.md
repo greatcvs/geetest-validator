@@ -6,6 +6,8 @@
 [![Downloads](https://img.shields.io/github/downloads/greatcvs/geetest-validator/total?color=blue&label=下载)](../../archive/main.tar.gz)
 [![Releases](https://img.shields.io/github/v/release/greatcvs/geetest-validator?color=green&label=发行版)](../../releases/latest)
 
+[![访问量](https://profile-counter.glitch.me/greatcvs-geetest-validator/count.svg)](https://github.com/greatcvs/geetest-validator)
+
 预览地址：[https://guss.gay ](https://s.guss.gay/test)
 项目运行端口：12124
 
