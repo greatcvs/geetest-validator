@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geetest</title>
+    <link rel="shortcut icon" href="//gcore.jsdelivr.net/gh/story-z/Halo-File@main/gt3logo-ckvh.webp" type="image/x-icon">
+
+    <link href="/public/css/style.css" rel="stylesheet" type="text/css">
+
+    <script src="/public/js/gt.js"></script>
+    <script src="/public/js/index.js"></script>
+</head>
+
+<body>
+<div class="logo">
+    <img src="//gcore.jsdelivr.net/gh/story-z/Halo-File@main/gt3logo-ckvh.webp" width="100%" height="100%" alt="geetest">
+</div>
+<div class="box">
+    <div class="horse">
+        <div class="horse-head">
+            <div class="title">请点击下方按钮</div>
+            <div class="form">
+                <label class="form-label">gt</label>
+                <input type="text" class="form-control" id="gt" placeholder="请输入 gt">
+            </div>
+            <div class="form">
+                <label class="form-label">challenge</label>
+                <input type="text" class="form-control" id="challenge" placeholder="请输入 challenge">
+            </div>
+
+            <div id="captcha">
+                <div id="gen" class="btn hide">生成验证码</div>
+                <div id="success" class="btn hide">验证成功</div>
+                <div id="wait" class="hide">
+                    <div class="loading">
+                        <div class="loading-dot"></div>
+                        <div class="loading-dot"></div>
+                        <div class="loading-dot"></div>
+                        <div class="loading-dot"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="result" class="hide">
+                <div class="result-title">验证结果</div>
+                <div class="form">
+                    <label class="form-label">validate</label>
+                    <input type="text" class="form-control" id="validate" style="cursor: text;" disabled>
+                </div>
+                <div class="form">
+                    <label class="form-label">seccode</label>
+                    <input type="text" class="form-control" id="seccode" style="cursor: text;" disabled>
+                </div>
+                <div class="btn" id="result-btn">复制结果</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="toast-box">消息</div>
+
+<div class="box-footer">
+    <span id="busuanzi_container_site_pv">总访问量：<span id="busuanzi_value_site_pv"></span></span>👀｜
+    <span id="busuanzi_container_site_uv">访客数：<span id="busuanzi_value_site_uv"></span></span>🚶‍♂️
+</div>
+</body>
+<script src="//gcore.jsdelivr.net/gh/story-z/Halo-File@main/sakura-neap.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</html>

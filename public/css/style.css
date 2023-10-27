@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --background-color: #fff; /* 默认背景颜色 */
+    --text-color: #000; /* 默认文本颜色 */
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #000; /* 深色模式的背景颜色 */
+        --text-color: #fff; /* 深色模式的文本颜色 */
+    }
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 8rem;
+}
+
+.box {
+    padding: 5px;
+    max-width: 400px;
+    border-radius: 15px;
+    /*background:  var(--text-color);*/
+    /*border: 2px solid #90b5e2;*/
+    position: absolute;
+    top:20rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/*!*边框跑马灯*!*/
+.horse {
+    background-image: linear-gradient(90deg, rgba(196, 233, 64, 0) 0%,
+    rgb(62, 224, 84) 100%),
+    linear-gradient(0deg, rgb(62, 224, 84) 0%, rgba(196, 233, 64, 0) 100%),
+    linear-gradient(-90deg, rgba(196, 233, 64, 0) 0%, rgb(62, 224, 84) 100%),
+    linear-gradient(0deg, rgba(196, 233, 64, 0) 0%, rgb(62, 224, 84) 100%);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 100px 4px, 4px 100px, 100px 4px, 4px 100px;
+    background-position: -100px 1px, calc(100% - 1px) -100px, calc(100% + 100px) calc(100% - 1px), 1px 0px;
+    animation: moveLine 8s infinite linear;
+    height: calc(100% - 2px);
+    padding: 1px;
+    background-clip: content-box;
+}
+.horse-head{
+    padding: 1rem 1.2rem 1.6rem 1rem;
+}
+@keyframes moveLine {
+    0% {
+        background-position: -100px 1px, calc(100% - 1px) -100px, calc(100% + 100px) calc(100% - 1px), 1px 0px;
+    }
+    5% {
+        background-position: 0px 1px, calc(100% - 1px) -100px, calc(100% + 100px) calc(100% - 1px), 1px -100px;
+    }
+    30% {
+        background-position: 100% 1px, calc(100% - 1px) -100px, calc(100% + 100px) calc(100% - 1px), 1px -100px;
+    }
+    35% {
+        background-position: calc(100% + 100px) 1px, calc(100% - 1px) 0px, calc(100% + 100px) calc(100% - 1px), 1px -100px;
+    }
+    50% {
+        background-position: calc(100% + 100px) 1px, calc(100% - 1px) 100%, calc(100% + 100px) calc(100% - 1px), -100px -100px;
+    }
+    55% {
+        background-position: calc(100% + 100px) 1px, calc(100% - 1px) calc(100% + 100px), 100% calc(100% - 1px), -100px calc(100% + 100px);
+    }
+    80% {
+        background-position: calc(100% + 100px) 1px, calc(100% - 1px) calc(100% + 100px), 0px calc(100% - 1px), 1px calc(100% + 100px);
+    }
+    85% {
+        background-position: calc(100% + 100px) 1px, calc(100% - 1px) calc(100% + 100px), -100px calc(100% - 1px), 1px 100%;
+    }
+    100% {
+        background-position: calc(100% + 100px) 1px, calc(100% - 1px) calc(100% + 100px), -100px calc(100% - 1px), 1px 0px;
+    }
+}
+
+.title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.result-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.toast-box {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: -30px;
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 12px 30px;
+    background: var(--text-color);
+    color: var(--background-color);
+    opacity: 0;
+    text-align: center;
+    min-width: 150px;
+    max-width: 300px;
+    white-space: nowrap;
+    transition: all 0.5s ease;
+}
+
+
+.form {
+    margin-bottom: 16px;
+    display: none;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 7px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: inherit;
+    background-clip: padding-box;
+    border: 1px solid #e6e7e9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control:focus {
+    color: inherit;
+    border-color: #90b5e2;
+    outline: 0;
+    box-shadow: 0 0 0 4px rgb(32 107 196 / 25%);
+}
+.form-control:disabled {
+    background-color: #f1f5f9;
+    opacity: 1;
+}
+
+#captcha {
+    width: 336px;
+    display: inline-block;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+
+    width: 336px;
+    height: 42px;
+    color: #f8fafc;
+    background-color: #3873ff;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 rgba(29, 39, 59, 0.04), inset 0 -1px 0 rgba(29, 39, 59, 0.2);
+}
+
+.btn:hover {
+    color: #f8fafc;
+    text-decoration: none;
+    background-color: #437cff;
+    border-color: transparent;
+}
+#success {
+    background-color: #2fb344;
+    cursor: default;
+}
+
+#wait {
+    height: 42px;
+    width: 336px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #F3F3F3;
+}
+
+.hide {
+    display: none !important;
+}
+
+.loading {
+    margin: auto;
+    width: 70px;
+    height: 20px;
+}
+
+.loading-dot {
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin: 18px 4px;
+    background: #ccc;
+    border-radius: 50%;
+    opacity: 0;
+    box-shadow: 0 0 2px black;
+    animation: loadingFade 1s infinite;
+}
+
+.loading-dot:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.loading-dot:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.loading-dot:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.loading-dot:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+@keyframes loadingFade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.geetest_radar_btn {
+    border-radius: 4px !important;
+}
+.box-footer{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    position: absolute;
+    bottom: 50px;
+}

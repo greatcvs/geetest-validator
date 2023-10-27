@@ -1,0 +1,17 @@
+{
+  "apps": [
+    {
+      "name": "geetest-manual",
+      "script": "./config/server.js",
+      "max_memory_restart": "128M",
+      "restart_delay": 60000,
+      "env": {
+        "NODE_ENV": "production",
+        "PORT": 12124,
+        "HOST": []
+      }
+    }
+  ]
+}
+
+

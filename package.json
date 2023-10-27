@@ -1,0 +1,22 @@
+{
+  "name": "geetest-manual",
+  "author": "story-x",
+  "description": "geetest-manual",
+  "version": "1.0.0",
+  "scripts": {
+    "app": "node config/server.js",
+    "start": "pm2 start ./config/pm2/pm2.json",
+    "stop": "pm2 stop ./config/pm2/pm2.json",
+    "restart": "pm2 restart ./config/pm2/pm2.json",
+    "log": "pm2 logs --lines 400 geetest-manual"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "moment": "^2.29.4",
+    "node-schedule": "^2.1.1",
+    "pm2": "^5.3.0",
+    "uuid": "^9.0.1"
+  }
+}
