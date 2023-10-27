@@ -1,4 +1,4 @@
-# Geetest-Manual
+# Geetest-Validator
 极验手动验证器
 
 预览地址：[https://guss.gay ](https://s.guss.gay/test)
