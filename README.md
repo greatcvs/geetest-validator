@@ -1,11 +1,11 @@
 # Geetest-Validator
 极验手动验证器
 
-[![Stars](https://img.shields.io/github/stars/greatcvs/geetest-validator?color=yellow&label=收藏)](../../stargazers)
-[![Downloads](https://img.shields.io/github/downloads/greatcvs/geetest-validator/total?color=blue&label=下载)](../../archive/main.tar.gz)
-[![Releases](https://img.shields.io/github/v/release/greatcvs/geetest-validator?color=green&label=发行版)](../../releases/latest)
+[![Stars](https://img.shields.io/github/stars/greatcvs/geetest-validator?color=yellow&label=收藏)](https://github.com/greatcvs)
+[![Downloads](https://img.shields.io/github/downloads/greatcvs/geetest-validator/total?color=blue&label=下载)](https://github.com/greatcvs)
+[![Releases](https://img.shields.io/github/v/release/greatcvs/geetest-validator?color=green&label=发行版)](https://github.com/greatcvs)
 
-[![访问量](https://profile-counter.glitch.me/greatcvs-geetest-validator/count.svg)](https://github.com/greatcvs/geetest-validator)
+[![访问量](https://profile-counter.glitch.me/greatcvs-geetest-validator/count.svg)](https://github.com/greatcvs)
 
 预览地址：[https://guss.gay ](https://s.guss.gay/test)
 项目运行端口：12124
